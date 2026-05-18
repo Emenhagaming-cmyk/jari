@@ -95,38 +95,53 @@ function speak(text) {
 
   speechSynthesis.speak(utter);
 }
-
 function countFingers(landmarks) {
 
   let count = 0;
 
   // ibu jari
-  if (landmarks[4].x < landmarks[3].x) {
+  if (
+    landmarks[4].x <
+    landmarks[3].x - 0.05
+  ) {
     count++;
   }
 
   // telunjuk
-  if (landmarks[8].y < landmarks[6].y) {
+  if (
+    landmarks[8].y <
+    landmarks[6].y - 0.03
+  ) {
     count++;
   }
 
   // tengah
-  if (landmarks[12].y < landmarks[10].y) {
+  if (
+    landmarks[12].y <
+    landmarks[10].y - 0.03
+  ) {
     count++;
   }
 
   // manis
-  if (landmarks[16].y < landmarks[14].y) {
+  if (
+    landmarks[16].y <
+    landmarks[14].y - 0.03
+  ) {
     count++;
   }
 
   // kelingking
-  if (landmarks[20].y < landmarks[18].y) {
+  if (
+    landmarks[20].y <
+    landmarks[18].y - 0.03
+  ) {
     count++;
   }
 
   return count;
 }
+
 
 async function detect() {
 
