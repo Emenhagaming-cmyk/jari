@@ -1,0 +1,100 @@
+body{
+  margin:0;
+  overflow:hidden;
+  background:#111;
+  font-family:sans-serif;
+}
+
+video,
+canvas{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transform:scaleX(-1);
+}
+
+#count{
+  position:absolute;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:10;
+
+  background:rgba(0,0,0,0.5);
+  color:white;
+
+  padding:10px 20px;
+  border-radius:15px;
+
+  font-size:30px;
+  font-weight:bold;
+}
+
+#gesture{
+  position:absolute;
+  top:90px;
+  left:50%;
+  transform:translateX(-50%);
+
+  z-index:10;
+
+  color:white;
+
+  font-size:20px;
+  font-weight:bold;
+  letter-spacing:3px;
+
+  padding:10px 20px;
+
+  border:1px solid white;
+  border-radius:15px;
+
+  background:rgba(0,0,0,0.4);
+
+  backdrop-filter:blur(10px);
+
+  box-shadow:0 0 20px white;
+
+  transition:0.2s;
+}
+
+
+#count{
+  transition:0.2s;
+
+  box-shadow:0 0 20px white;
+
+  border:1px solid white;
+
+  backdrop-filter:blur(10px);
+}
+#modeBtn{
+  position:absolute;
+
+  bottom:40px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  z-index:20;
+
+  background:rgba(0,0,0,0.5);
+
+  color:cyan;
+
+  border:1px solid cyan;
+
+  padding:12px 25px;
+
+  border-radius:15px;
+
+  font-size:16px;
+  font-weight:bold;
+
+  backdrop-filter:blur(10px);
+
+  box-shadow:0 0 20px cyan;
+
+  cursor:pointer;
+}
